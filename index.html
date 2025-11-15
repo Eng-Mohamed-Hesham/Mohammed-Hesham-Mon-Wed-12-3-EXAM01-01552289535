@@ -1,11 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EliteHomes</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EliteHomes - Your Dream Home Awaits</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">EliteHomes</a>
+
+        <!-- Toggler Button for Mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+
+            <!-- Mega Menu Dropdown -->
+            <li class="nav-item dropdown mega-menu">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="propertiesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Properties
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="propertiesDropdown">
+                <div class="container">
+                  <div class="row">
+                    <!-- Featured Properties Column -->
+                    <div class="col-md-3">
+                      <h6 class="menu-section-title">Featured Properties</h6>
+
+                      <div class="card featured-property">
+                        <img
+                          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400"
+                          alt="Luxury Villa"
+                        />
+                        <div class="card-body">
+                          <div class="property-title">Luxury Villa</div>
+                          <div class="property-details">
+                            $2.5M • 5 beds • 4 baths
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card featured-property">
+                        <img
+                          src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400"
+                          alt="Modern Apartment"
+                        />
+                        <div class="card-body">
+                          <div class="property-title">Modern Apartment</div>
+                          <div class="property-details">
+                            $850K • 2 beds • 2 baths
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Property Types Column -->
+                    <div class="col-md-3">
+                      <h6 class="menu-section-title">Property Types</h6>
+                      <a href="#" class="menu-item">
+                        <i class="bi bi-house-door"></i>
+                        <span>Single Family Homes</span>
+                      </a>
+                      <a href="#" class="menu-item">
+                        <i class="bi bi-building"></i>
+                        <span>Apartments</span>
+                      </a>
+                      <a href="#" class="menu-item">
+                        <i class="bi bi-buildings"></i>
+                        <span>Condominiums</span>
+                      </a>
+                      <a href="#" class="menu-item">
+                        <i class="bi bi-shop"></i>
+                        <span>Commercial</span>
+                      </a>
+                      <a href="#" class="menu-item">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>Land & Lots</span>
+                      </a>
+                    </div>
+
+                    <!-- Popular Locations Column -->
+                    <div class="col-md-3">
+                      <h6 class="menu-section-title">Popular Locations</h6>
+
+                      <div class="location-card">
+                        <img
+                          src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=400"
+                          alt="New York"
+                        />
+                        <div class="location-overlay">
+                          <div class="location-name">New York</div>
+                          <div class="location-count">2,145 Properties</div>
+                        </div>
+                      </div>
+
+                      <div class="location-card">
+                        <img
+                          src="https://images.unsplash.com/photo-1534190239940-9ba8944ea261?w=400"
+                          alt="Los Angeles"
+                        />
+                        <div class="location-overlay">
+                          <div class="location-name">Los Angeles</div>
+                          <div class="location-count">1,873 Properties</div>
+                        </div>
+                      </div>
+
+                      <div class="location-card">
+                        <img
+                          src="https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=400"
+                          alt="Miami"
+                        />
+                        <div class="location-overlay">
+                          <div class="location-name">Miami</div>
+                          <div class="location-count">1,526 Properties</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Resources Column -->
+                    <div class="col-md-3">
+                      <h6 class="menu-section-title">Resources</h6>
+
+                      <div class="resource-item">
+                        <div class="resource-icon">📖</div>
+                        <div class="resource-title">Buying Guide</div>
+                        <div class="resource-desc">
+                          Essential tips and strategies for first-time
+                          homebuyers
+                        </div>
+                        <a href="#" class="resource-link">Learn More →</a>
+                      </div>
+
+                      <div class="resource-item">
+                        <div class="resource-icon">📈</div>
+                        <div class="resource-title">Investment Tips</div>
+                        <div class="resource-desc">
+                          Smart strategies for property investment success
+                        </div>
+                        <a href="#" class="resource-link">Learn More →</a>
+                      </div>
+
+                      <div class="resource-item">
+                        <div class="resource-icon">📋</div>
+                        <div class="resource-title">Market Reports</div>
+                        <div class="resource-desc">
+                          In-depth analysis of real estate market trends
+                        </div>
+                        <a href="#" class="resource-link">Learn More →</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Header -->
+    <header class="d-flex flex-column justify-content-center align-items-center">
+      <h1 class="text-white fw-bold">Find Your Dream Home</h1>
+      <p class="text-white fs-5">
+        Discover exceptional properties in prime locations. From modern condos
+        to luxury estates, we help you find the perfect place to call home.
+      </p>
+
+      <!-- Search Section -->
+      <section class="search-hero">
+        <div class="container">
+          <div class="search-container">
+            <!-- Row 1: Location, Property Type, Price Range -->
+            <div class="search-row">
+              <!-- Location -->
+              <div class="search-field">
+                <label class="search-label">Location</label>
+                <div class="location-wrapper">
+                  <i class="bi bi-geo-alt location-icon"></i>
+                  <input
+                    type="text"
+                    class="search-input with-icon"
+                    placeholder="Enter city, neighborhood, or ZIP code"
+                  />
+                </div>
+              </div>
+
+              <!-- Property Type -->
+              <div class="search-field">
+                <label class="search-label">Property Type</label>
+                <select class="search-select">
+                  <option value="">All Types</option>
+                  <option value="house">House</option>
+                  <option value="apartment">Apartment</option>
+                  <option value="condo">Condo</option>
+                  <option value="townhouse">Townhouse</option>
+                </select>
+              </div>
+
+              <!-- Price Range -->
+              <div class="search-field">
+                <label class="search-label">Price Range</label>
+                <select class="search-select">
+                  <option value="">Any Price</option>
+                  <option value="0-200000">$0 - $200,000</option>
+                  <option value="200000-500000">$200,000 - $500,000</option>
+                  <option value="500000-1000000">$500,000 - $1,000,000</option>
+                  <option value="1000000+">$1,000,000+</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Row 2: Bedrooms, Bathrooms, Min Sq Ft, Max Sq Ft -->
+            <div class="search-row-2">
+              <!-- Bedrooms -->
+              <div class="search-field">
+                <label class="search-label">Bedrooms</label>
+                <select class="search-select">
+                  <option value="">Any</option>
+                  <option value="1">1+</option>
+                  <option value="2">2+</option>
+                  <option value="3">3+</option>
+                  <option value="4">4+</option>
+                  <option value="5">5+</option>
+                </select>
+              </div>
+
+              <!-- Bathrooms -->
+              <div class="search-field">
+                <label class="search-label">Bathrooms</label>
+                <select class="search-select">
+                  <option value="">Any</option>
+                  <option value="1">1+</option>
+                  <option value="2">2+</option>
+                  <option value="3">3+</option>
+                  <option value="4">4+</option>
+                </select>
+              </div>
+
+              <!-- Min Sq Ft -->
+              <div class="search-field">
+                <label class="search-label">Min Sq Ft</label>
+                <input type="number" class="search-input" placeholder="1,000" />
+              </div>
+
+              <!-- Max Sq Ft -->
+              <div class="search-field">
+                <label class="search-label">Max Sq Ft</label>
+                <input type="number" class="search-input" placeholder="5,000" />
+              </div>
+            </div>
+
+            <!-- Search Button -->
+            <button class="search-btn">
+              <i class="bi bi-search"></i>
+              Search Properties
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- End Header -->
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
