@@ -1362,6 +1362,34 @@ header .rate span {
   font-size: 20px;
 }
 
+.service-icon2 {
+  background: #fef9c2;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d08700;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  font-size: 20px;
+}
+
+.service-icon3 {
+  background: #dbfce7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00a63e;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  font-size: 20px;
+}
+
 .service-content h5 {
   font-size: 1.2rem;
   font-weight: 700;
@@ -1400,7 +1428,7 @@ header .rate span {
 
 .start-search-btn1 {
   padding: 16px 40px;
-  background-color: #00A63E;
+  background-color: #00a63e;
   color: white;
   border: none;
   border-radius: 10px;
@@ -1418,7 +1446,7 @@ header .rate span {
 
 .start-search-btn2 {
   padding: 16px 40px;
-  background-color: #00A63E;
+  background-color: #9810fa;
   color: white;
   border: none;
   border-radius: 10px;
@@ -1434,10 +1462,9 @@ header .rate span {
   box-shadow: 0 10px 30px rgba(39, 176, 50, 0.699);
 }
 
-
 .start-search-btn3 {
   padding: 16px 40px;
-  background-color: #00A63E;
+  background-color: #a65f00;
   color: white;
   border: none;
   border-radius: 10px;
@@ -1450,13 +1477,12 @@ header .rate span {
 
 .start-search-btn3:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(39, 176, 50, 0.699);
+  box-shadow: 0 10px 30px rgba(146, 176, 39, 0.699);
 }
-
 
 .start-search-btn4 {
   padding: 16px 40px;
-  background-color: #00A63E;
+  background-color: #00a63e;
   color: white;
   border: none;
   border-radius: 10px;
@@ -1471,7 +1497,6 @@ header .rate span {
   transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(39, 176, 50, 0.699);
 }
-
 
 /* Services Image */
 .services-image-container {
@@ -1495,19 +1520,50 @@ header .rate span {
   text-align: center;
 }
 
-.selling-badge {
-  left: 80%;
+.success-badge1 {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.success-badge3 {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .success-badge h3 {
-  font-size: 2.5rem;
   font-weight: 700;
   color: #7f22fe;
   margin: 0 0 5px 0;
 }
 
-.selling-badge h3 {
-  color: #00A63E;
+.success-badge1 h3 {
+  color: #00a63e;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.success-badge3 h3 {
+  color: #a65f00;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.success-badge4 h3 {
+  color: #432dd7;
+  font-weight: 700;
+  margin: 0 0 5px 0;
 }
 
 .success-badge p {
@@ -1560,11 +1616,60 @@ header .rate span {
 
 /* ========== CONTACT SECTION ========== */
 
+/* ========== CONTACT SECTION ========== */
+
 .contact-section {
   padding: 80px 0;
   background: white;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Decorative Circles */
+.contact-section::before,
+.contact-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Top Left Circle */
+.contact-section::before {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(
+    135deg,
+    rgba(155, 39, 176, 0.267),
+    rgba(155, 39, 176, 0.274)
+  );
+  border: 2px solid rgba(156, 39, 176, 0.15);
+  top: -150px;
+  right: -150px;
+}
+
+/* Bottom Right Circle */
+.contact-section::after {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(
+    135deg,
+    rgba(155, 39, 176, 0.267),
+    rgba(155, 39, 176, 0.274)
+  );
+  border: 2px solid rgba(156, 39, 176, 0.12);
+  bottom: -200px;
+  left: -200px;
+}
+
+/* تأكد إن المحتوى فوق الدوائر */
+.contact-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* باقي الـ styles... */
 .contact-section .quick-contact-card {
   background: white;
   border: 2px solid #e0e0e0;
@@ -1584,7 +1689,7 @@ header .rate span {
 .contact-section .contact-icon {
   width: 70px;
   height: 70px;
-  border-radius: 50%;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1602,7 +1707,7 @@ header .rate span {
 }
 
 .contact-section .geo-icon {
-  background: linear-gradient(135deg, #ff6f00, #ff8f00);
+  background: linear-gradient(135deg, #5410a1, #ff7b00);
 }
 
 .contact-section .chat-icon {
